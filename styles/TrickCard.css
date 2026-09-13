@@ -1,0 +1,137 @@
+.trick-card {
+  background: #1a1e26;
+  border-radius: 24px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 8px 16px -6px rgba(0, 0, 0, 0.6);
+  transition: transform 0.18s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+}
+
+.trick-card:hover {
+  border-color: rgba(249, 194, 60, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 24px -8px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(249, 194, 60, 0.15);
+}
+
+.trick-card:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+.trick-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trick-icon {
+  width: 44px;
+  height: 44px;
+  background: #252c37;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #f9c23c;
+  border: 1px solid rgba(249, 194, 60, 0.15);
+  transition: background 0.2s ease, border-color 0.2s ease;
+  pointer-events: none;
+}
+
+.trick-card:hover .trick-icon {
+  background: rgba(249, 194, 60, 0.1);
+  border-color: rgba(249, 194, 60, 0.35);
+}
+
+.bookmark-btn {
+  background: transparent;
+  border: none;
+  color: #5f6a7c;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 10px;
+  transition: color 0.2s ease, background 0.2s ease,
+    transform 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark-btn:hover {
+  color: #f9c23c;
+  background: rgba(249, 194, 60, 0.1);
+}
+
+.bookmark-btn:active {
+  transform: scale(0.88);
+}
+
+.bookmark-btn.saved {
+  color: #f9c23c;
+}
+
+.bookmark-btn.saved i {
+  filter: drop-shadow(0 0 6px rgba(249, 194, 60, 0.7));
+}
+
+.trick-card h5 {
+  color: #f0f3f8;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  line-height: 1.2;
+  pointer-events: none;
+}
+
+.trick-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  color: #8c96a8;
+  font-weight: 500;
+  margin-top: 2px;
+  pointer-events: none;
+}
+
+.trick-meta i {
+  font-size: 10px;
+  color: #f9c23c;
+  margin-right: 3px;
+}
+
+.difficulty {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background: #2e3540;
+  transition: background 0.2s ease;
+}
+
+.dot.fill {
+  background: #f9c23c;
+  box-shadow: 0 0 6px #f9c23c;
+}
+
+@media (max-width: 380px) {
+  .trick-card h5 {
+    font-size: 13px;
+  }
+}

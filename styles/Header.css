@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(145deg, #f9c23c, #f07c1e);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px rgba(240, 124, 30, 0.35);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.logo-icon:hover {
+  transform: scale(1.05);
+}
+
+.logo-icon:active {
+  transform: scale(0.97);
+}
+
+.logo-icon i {
+  font-size: 22px;
+  color: #0a0c10;
+  filter: drop-shadow(0 1px 1px rgba(255, 255, 255, 0.3));
+  pointer-events: none;
+}
+
+.app-name {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.app-name span {
+  color: #f9c23c;
+  font-weight: 900;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  color: #a0a8b8;
+}
+
+.header-actions i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.15s ease, background 0.2s ease;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  user-select: none;
+}
+
+.header-actions i:hover {
+  color: #f9c23c;
+  background: rgba(249, 194, 60, 0.08);
+  border-color: rgba(249, 194, 60, 0.25);
+  transform: translateY(-1px);
+}
+
+.header-actions i:active {
+  transform: scale(0.94);
+}

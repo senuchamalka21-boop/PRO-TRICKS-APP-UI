@@ -1,19 +1,34 @@
-# @babel/core
+# ⚡ PRO TRICKS — Sports App UI
 
-> Babel compiler core.
+A modern, mobile-first sports tricks application UI built with **React** and **pure CSS**.
 
-See our website [@babel/core](https://babeljs.io/docs/babel-core) for more information or the [issues](https://github.com/babel/babel/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3A%22pkg%3A%20core%22+is%3Aopen) associated with this package.
+## 🚀 Features
 
-## Install
+- 🎨 Modern dark-themed UI with golden accents
+- 🔍 Live search filtering
+- 🏀 Category-based filtering (Basketball, Soccer, Tennis, Strength)
+- 📱 Fully responsive mobile-first design
+- ⚡ Featured trick banner
+- 🧭 Interactive bottom navigation
+- 🎯 Difficulty indicators per trick
 
-Using npm:
+## 🛠️ Tech Stack
 
-```sh
-npm install --save-dev @babel/core
-```
+- **React 18** — Component-based UI
+- **CSS3** — Flexbox & Grid layouts
+- **Font Awesome 6** — Icon library
 
-or using yarn:
+## 📦 Installation
 
-```sh
-yarn add @babel/core --dev
-```
+```bash
+# Clone or create the project
+npx create-react-app pro-tricks
+cd pro-tricks
+
+# Install Font Awesome
+npm install @fortawesome/fontawesome-free
+
+# Copy all provided files into their respective locations
+
+# Start the dev server
+npm start
